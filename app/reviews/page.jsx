@@ -21,7 +21,7 @@ export default async function ReviewsPage() {
             className=" bg-white border rounded shadow w-80 hover:shadow-xl"
           >
             <Link href={`/reviews/${review.slug}`}>
-              <Image
+              <img
                 src={review.image}
                 alt=""
                 width="320"

@@ -1,5 +1,5 @@
 import Heading from "@/components/Heading";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import { getFeaturedReview } from "@/lib/reviews";
 
@@ -16,7 +16,7 @@ export default async function HomePage() {
           href="/reviews/stardew-valley"
           className="flex flex-col sm:flex-row"
         >
-          <Image
+          <img
             src="/images/stardew-valley.jpg"
             alt=""
             width="320"

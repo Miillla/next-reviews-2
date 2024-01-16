@@ -26,7 +26,7 @@ export default async function ReviewPage({ params: { slug } }) {
         <ShareButtons />
       </div>
 
-      <Image
+      <img
         src={review.image}
         alt=""
         width="640"
