@@ -1,7 +1,14 @@
+const moduleAlias = require("module-alias");
+
+moduleAlias.addAliases({
+  "@": "./",
+});
+
 /** @type {import('next').NextConfig} */
 module.exports = {
-  // images: {
-  //   unoptimized: true,
-  // },
+  webpack: (config) => {
+    config.resolve.alias["@"] = path.resolve(__dirname);
+    return config;
+  },
   output: "export",
 };
