@@ -11,5 +11,8 @@ module.exports = {
     config.resolve.alias["@"] = path.resolve(__dirname);
     return config;
   },
-  output: "export",
+  // output: "export",
+  images: {
+    unoptimized: true,
+  },
 };
